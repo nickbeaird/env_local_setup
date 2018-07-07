@@ -41,8 +41,11 @@ pyenv global 3.6.5
 2. Virtualenv and Virtualenvwrapper
 - https://virtualenv.pypa.io/en/stable/
 - http://virtualenvwrapper.readthedocs.io/en/latest/install.html
+- https://github.com/pyenv/pyenv-virtualenvwrapper
+- to run virtualenvwrapper with pyenv, you will need to install pyenv, pyenv-virtualenvwrapper and follow the below steps. 
 ```
-cd ~
-pip install virtualenv 
-pip install virtualenvwrapper
+mkdir [project]
+pyenv virtualenvwrapper (initiate virtualenvwrapper with pyenv)
+virtualenvwrapper [virtual-environment]
+workon [virtual-environment]
 ```

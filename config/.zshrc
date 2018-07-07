@@ -53,8 +53,16 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:/usr/local/bin:$PATH"
 eval "$(pyenv init -)"
 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+
 # set up Maven to recognize my most recent Java
 ## not sure if I will need this?
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
 export JAVA_HOME
 export PATH=$PATH:$JAVA_HOME/bin
+
+
+
+
