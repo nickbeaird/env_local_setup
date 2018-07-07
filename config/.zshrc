@@ -43,19 +43,26 @@ fi
 
 # Load the theme.
 # antigen theme jdavis/zsh-files themes/jdavis
-antigen theme robbyrussell
+# antigen theme robbyrussell
+antigen theme muse
 
 # Tell antigen that you're done.
 antigen apply
 
-# Python pyenv. Check out the folder ~.pyenv for more info. All google it. This allows you to have multiple versions of python
+# disables prompt mangling in virtual_env/bin/activate
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+# Python pyenv. Check out the folder ~.pyenv for more info. All google it. This
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:/usr/local/bin:$PATH"
 eval "$(pyenv init -)"
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
+export VIRTUALENVWRAPPER=$(which virtualenvwrapper.sh)
+
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+pyenv virtualenvwrapper
 
 # set up Maven to recognize my most recent Java
 ## not sure if I will need this?
