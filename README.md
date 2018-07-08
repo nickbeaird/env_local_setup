@@ -1,12 +1,12 @@
 # env_local_setup
 
-### Script insall
+### 1. Script install
 1. use localsetup.sh
 - curl install brew
 - brew install wget, zsh, git, pyenv, pyenv-virtualwrapper
 - pyenv install python and set global
 
-### Manual install
+### 2. Manual install
 1. oh my zsh 
 - https://github.com/robbyrussell/oh-my-zsh
 - https://github.com/zsh-users/antigen
@@ -19,7 +19,7 @@
 - https://code.visualstudio.com/
 
 
-### Config
+### 3. Config
 1. .zshrc for shell
 
 ### Python
